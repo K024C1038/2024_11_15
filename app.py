@@ -12,15 +12,7 @@ def index():
             'users.html',
             users=users)
 
-@app.route('/page2')
-def page2():
-    users = [
-        {'name':'ダイキ', 'age':25},
-    ]
-    return render_template(
-            'user1.html',
-            users=users)
-
-
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
+
+
